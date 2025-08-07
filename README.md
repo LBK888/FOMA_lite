@@ -26,13 +26,18 @@ This project was folked and modified from the original [FOMA Repository](https:/
 ### Setup
 
 1. **Clone or download the project files**
-
-2. **Install dependencies**:
    ```bash
+   git clone https://github.com/LBK888/FOMA_lite
+   cd FOMA_lite
+   ```
+
+2. **Install pytorch-cuda and dependencies**:
+   ```bash
+   pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu126
    pip install -r requirements.txt
    ```
 
-3. **Verify installation**:
+3. **Verify installation (optional)**:
    ```bash
    python -c "import torch, streamlit, plotly; print('Installation successful!')"
    ```
@@ -41,17 +46,12 @@ This project was folked and modified from the original [FOMA Repository](https:/
 
 ### Starting the Application
 
-1. **Navigate to the project directory**:
-   ```bash
-   cd FOMA_lite
-   ```
-
-2. **Launch the Streamlit app**:
+1. **Launch the Streamlit app**:
    ```bash
    streamlit run foma_comparison.py
    ```
 
-3. **Open your web browser** and navigate to the URL shown in the terminal (typically `http://localhost:8501`)
+2. **Open your web browser** and navigate to the URL shown in the terminal (typically `http://localhost:8501`)
 
 ### Using the Application
 
@@ -187,3 +187,4 @@ If you use this tool in your research, please cite the original FOMA paper and t
 
 
 **Note**: This tool is designed for regression tasks. For classification problems, modifications to the model architecture and loss functions may be required. 
+
