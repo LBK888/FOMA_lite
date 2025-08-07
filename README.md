@@ -37,7 +37,10 @@ This project was folked and modified from the original [FOMA Repository](https:/
    pip install -r requirements.txt
    ```
 
-3. **Verify installation (optional)**:
+3. **For windows: Microsoft C++ Build Tools might be required**:  
+   see [stackoverflow solution](https://stackoverflow.com/questions/64261546/how-to-solve-error-microsoft-visual-c-14-0-or-greater-is-required-when-inst) for more info
+
+4. **Verify installation (optional)**:
    ```bash
    python -c "import torch, streamlit, plotly; print('Installation successful!')"
    ```
@@ -54,9 +57,11 @@ This project was folked and modified from the original [FOMA Repository](https:/
 2. **Open your web browser** and navigate to the URL shown in the terminal (typically `http://localhost:8501`)
 
 ### Using the Application
+<img width="1287" height="709" alt="image" src="https://github.com/user-attachments/assets/c8c73a88-49f8-4df2-893d-fd5de0aed636" />
 
 #### 1. Data Upload
 - Upload your Excel file (`.xlsx` format)
+- Please remove empty columns in the Excel file!
 - The application will automatically detect columns and allow you to select features and target variables
 
 #### 2. Data Quality Analysis
@@ -187,4 +192,5 @@ If you use this tool in your research, please cite the original FOMA paper and t
 
 
 **Note**: This tool is designed for regression tasks. For classification problems, modifications to the model architecture and loss functions may be required. 
+
 
