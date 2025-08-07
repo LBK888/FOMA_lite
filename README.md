@@ -2,6 +2,10 @@
 
 A comprehensive Streamlit application for comparing different FOMA (First-Order Model Augmentation) implementations in regression tasks. This tool provides an interactive interface for data augmentation, model training, and performance comparison between different FOMA variants.
 
+##
+
+This project was folked and modified from the original [FOMA Repository](https://github.com/azencot-group/FOMA) (Kaufman et al., ICML 2024)
+
 ## Features
 
 - **Multiple FOMA Implementations**: Compare No FOMA, Simple FOMA, and Enhanced FOMA approaches
@@ -180,5 +184,6 @@ Feel free to submit issues, feature requests, or pull requests to improve the to
 If you use this tool in your research, please cite the original FOMA paper and this implementation.
 
 ---
+
 
 **Note**: This tool is designed for regression tasks. For classification problems, modifications to the model architecture and loss functions may be required. 
