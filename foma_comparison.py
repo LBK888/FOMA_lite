@@ -25,6 +25,12 @@ import warnings
 from plotly.subplots import make_subplots
 warnings.filterwarnings('ignore')
 
+# for Examining the path of torch.classes raised: Tried to instantiate class '__path__._path', but it does not exist! Ensure that it is registered via torch::class_
+    # Option 1: Explicitly set the path (if you know where your compiled extensions are)
+# torch.classes.__path__ = [os.path.join(torch.__path__[0], 'some_compiled_extensions_dir')]
+    # Option 2: Set to empty list (often works in Streamlit scenarios)
+torch.classes.__path__ = []
+
 # 數據品質檢查函數
 def data_quality_check(X, y, X_aug=None, y_aug=None):
     quality_info = {
